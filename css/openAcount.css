@@ -1,0 +1,251 @@
+.account {
+  background: #f4f8fa;
+  padding-top: 100px;
+}
+
+.account__box {
+  max-width: 500px;
+  margin: 24px auto 0;
+  background: var(--secondaryColar);
+  border-radius: 10px;
+  box-shadow: 0px 4px 56px 0px rgba(0, 0, 0, 0.04),
+    0px 12px 16px 0px rgba(0, 0, 0, 0.04);
+}
+
+.account__infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand__logo {
+  margin: 40px 0 24px;
+  width: 100px;
+  height: 40px;
+}
+
+.brand__logo img {
+  width: 100%;
+}
+
+.brand__title {
+  padding-bottom: 16px;
+  color: var(--primaryColar);
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.brand__infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-bottom: 56px;
+}
+
+.brand__desc {
+  color: var(--primaryColar);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+.brand__link {
+  color: #01bab3;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  border-bottom: 1.5px solid transparent;
+}
+
+.brand__link:hover {
+  border-color: #01bab3;
+}
+
+.account__form {
+  padding: 0 40px 25px;
+}
+
+.fisrt__row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+
+.fisrt__row input {
+  width: 100%;
+  padding: 5px 10px;
+  color: var(--primaryColar);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.phone__section{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.phone__section select{
+  width: 20%;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px ;
+  border: 1px solid var(--primaryColar);
+  text-align: center;
+}
+
+#tel{
+  width: 80%;
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 0 10px 10px 0;
+}
+
+.email,
+.tel,
+.country ,.city, .password , .confirm {
+  color: var(--primaryColar);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.email span,
+.tel span,
+.gender span,
+.count span,
+.city span,
+.password span,
+.confirm span
+ {
+  color: #01bab3;
+}
+
+.address__row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.country , .city{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.password{
+  margin-bottom: 25px;
+}
+
+#country ,#city{
+  padding: 10px 16px;
+} 
+
+.password-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#password {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#toggle-password {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+}
+
+.confirm__password{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+#confirm_password{
+  padding: 10px 16px;
+}
+
+.btn__register {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 12px 0;
+  color: var(--secondaryColar);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #01bab3;
+}
+
+
+
+.desc {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+  color: var(--primaryColar);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.desc span{
+  color: #01bab3;
+}
+
+@media (max-width: 550px) {
+  .register__box {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  .register__box {
+    max-width: 500px;
+    margin: 0 15px;
+  }
+
+  .fisrt__row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .first__name,
+  .last__name {
+    width: 100%;
+  }
+  .chack__gender {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .female,
+  .male {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.light {
+  --primaryColar: white;
+  --secondaryColar: black;
+}
+
+.light .register{
+    background: black;
+}

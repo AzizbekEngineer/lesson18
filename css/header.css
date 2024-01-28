@@ -1,0 +1,226 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0px;
+  background: var(--secondaryColar);
+  z-index: 999;
+}
+
+.show-shrink {
+  padding: 15px 0;
+  box-shadow: 0px 0px 10px gray;
+  background: var(--secondaryColar);
+}
+
+.header__nav--logo {
+  width: 100px;
+}
+.header__nav--logo img {
+  width: 100%;
+}
+
+.header__nav--right,
+.header__nav--list,
+.header__nav--btns {
+  gap: 20px;
+}
+
+.header__nav--item {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 0px;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: relative;
+  color: var(--primaryColar);
+  transition: 1s;
+}
+
+button{
+  border-color: var(--primaryColar);
+  color: var(--primaryColar);
+}
+
+.header__nav--item::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orange;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.header__nav--item::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orange;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+}
+
+.header__nav--item:hover::after {
+  width: 100%;
+  background: orange;
+  color: orange;
+}
+
+.header__nav--item:hover::before {
+  width: 100%;
+  background: orange;
+  color: orange;
+}
+
+.header__nav--item:hover {
+  color: orange;
+  border-color: orange;
+}
+
+.header__nav__login--btn {
+  padding: 8px 15px;
+  border: 1.5px solid var(--primaryColar);
+  background: transparent;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__nav__login--btn:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.header__nav__account--btn {
+  padding: 8px 15px;
+  border: 1.5px solid var(--primaryColar);
+  background: transparent;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__nav__account--btn:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.header__nav__lan--btn {
+  padding: 8px 15px;
+  border: 1.5px solid var(--primaryColar);
+  background: transparent;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__nav__lan--btn:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.header__nav__hamburger--btn {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.header__nav__hamburger--btn span {
+  width: 20px;
+  height: 2px;
+  background: var(--primaryColar);
+  border-radius: 2px;
+}
+
+#lan {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: var(--primaryColar);
+}
+
+#lan option{
+  color: var(--primaryColar);
+}
+
+#lan:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.mode__btn {
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 1025px) {
+  .header__nav--list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background: var(--secondaryColar);
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 15px skyblue;
+    transition: 0.4s;
+    z-index: 9999;
+  }
+  .header__nav--item::after {
+    height: 2px;
+  }
+  .header__nav__hamburger--btn {
+    display: flex;
+  }
+  .show-header__nav-list {
+    left: 0;
+  }
+}
+
+@media (max-width: 695px) {
+  .header__nav__login--btn,
+  .header__nav__account--btn,
+  .header__nav__lan--btn {
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #lan {
+    font-size: 12px;
+  }
+  .header__nav--right,
+  .header__nav--list,
+  .header__nav--btns {
+    gap: 10px;
+  }
+  .header__nav--logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 695px) {
+  .container__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.light {
+  --primaryColar: white;
+  --secondaryColar: black;
+}
+
+.light .header__nav--logo img{
+ src: 'images/logo_white.svg';
+}
