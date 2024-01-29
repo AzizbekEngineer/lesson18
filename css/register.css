@@ -65,11 +65,12 @@
 
 .register__form {
   padding: 0 40px 25px;
+  ;
 }
 
 .fisrt__row {
-  display: flex;
-  align-items: center;
+  /* background: black; */
+  display: flex ;
   justify-content: center;
   gap: 10px;
   margin-bottom: 25px;

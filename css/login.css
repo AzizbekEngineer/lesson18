@@ -67,7 +67,7 @@
   padding: 0 40px 25px;
 }
 
-.fisrt__row {
+.fisrt__row-email {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -76,7 +76,7 @@
 }
 
 
-.fisrt__row input {
+.fisrt__row-email input {
   width: 100%;
   padding: 5px 10px;
   color: var(--primaryColar);
@@ -166,7 +166,7 @@
     margin: 0 15px;
   }
 
-  .fisrt__row {
+  .fisrt__row-email {
     display: flex;
     flex-direction: column;
     gap: 5px;
